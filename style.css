@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Eater&family=Geist+Mono:wght@100..900&family=Mrs+Saint+Delafield&display=swap');
+body{
+    margin: 0;
+    background-color: black;
+    color: white;
+}
+.banner{
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(v2osk-PaNxe-QJwhE-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    mask-image: url(ezgif-6-0acaf59233.gif);
+    mask-size: cover;
+    mask-position: center;
+
+}
+.banner .name{
+    font-size: 6rem;
+    font-family: "Eater", serif;
+    background: linear-gradient(to right, white, black);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+}
+.banner::before {
+    content: '';
+    position: absolute;
+    background-image: url(mountain.avif);
+    z-index: -1;
+    inset: '0';
+}
+.banner  p{
+    text-align: center;
+  font-size: larger;
+  font-weight: 800;
+}
+@media(max-width:900px){
+    .banner .name {
+        font-size: 3rem;}
+}
